@@ -11,7 +11,7 @@ from dify_knowledge_api import DifyKnowledgeAPI
 
 def main():
     # Initialize the API client
-    api_base = os.getenv("DIFY_API_BASE", "https://llm.bupt.edu.cn/v1")
+            api_base = os.getenv("DIFY_API_BASE", "https://your-dify-instance.com/v1")
     api_key = os.getenv("DIFY_API_KEY")
     dataset_id = os.getenv("DIFY_DATASET_ID")
     

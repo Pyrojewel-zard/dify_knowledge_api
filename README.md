@@ -24,14 +24,14 @@ pip install requests
 
 **Windows PowerShell (accessapiprivate.ps1):**
 ```powershell
-$env:DIFY_API_BASE="https://llm.bupt.edu.cn/v1"
+$env:DIFY_API_BASE="https://your-dify-instance.com/v1"
 $env:DIFY_DATASET_ID="your-dataset-id"
 $env:DIFY_API_KEY="your-api-key"
 ```
 
 **Linux/macOS:**
 ```bash
-export DIFY_API_BASE="https://llm.bupt.edu.cn/v1"
+export DIFY_API_BASE="https://your-dify-instance.com/v1"
 export DIFY_DATASET_ID="your-dataset-id"
 export DIFY_API_KEY="your-api-key"
 ```
@@ -220,7 +220,7 @@ python upload_markdown.py --api-base "https://custom-dify-instance.com/v1" --dir
 
 ### 命令行参数
 
-- `--api-base`: Dify API的基础URL (默认: https://llm.bupt.edu.cn/v1)
+- `--api-base`: Dify API的基础URL (默认: 从环境变量读取)
 - `--dataset-id`: 目标数据集ID
 - `--api-key`: Dify API密钥
 - `--dir`: 包含Markdown文件的目录 (默认: ./markdown)
