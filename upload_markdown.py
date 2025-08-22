@@ -193,8 +193,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--api-base",
-        default=os.getenv("DIFY_API_BASE", "https://llm.bupt.edu.cn/v1"),
-        help="API base URL. Default: https://llm.bupt.edu.cn/v1 (override with DIFY_API_BASE)",
+        default=os.getenv("DIFY_API_BASE", "https://llm.example/v1"),
+        help="API base URL. Default: https://llm.example/v1 (override with DIFY_API_BASE)",
     )
     parser.add_argument(
         "--dir",
